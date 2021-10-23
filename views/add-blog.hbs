@@ -1,0 +1,37 @@
+  <div class="row" style="display: flex;justify-content:center;margin-top: 100px;">
+      <form action="/blogs/add" method="POST" style="width: 80%;" enctype="multipart/form-data">
+        <div class="row addblog__form">
+       
+       <div class="col-6">
+          <div class="input-group">
+          <input  id="title" type="text" name="title" class="form-control">
+          <label for="title">Title of the blog</label>
+        </div>
+          <div class="input-group">
+            <textarea id="textarea2" class="form-control" name="info"></textarea>
+            <label for="textarea2">Blog info</label>
+          </div>
+           <div class="input-group">
+          <input  id="videoUrl" type="text" name="videoUrl" class="form-control">
+          <label for="videoUrl">Video url of the blog</label>
+        </div>
+
+         <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupFile01">Choose Picture</label>
+            <input type="file" class="form-control" name="image" id="inputGroupFile01">
+          </div>
+         <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupFile01">Choose Audio</label>
+            <input type="file" class="form-control" name="audio" id="inputGroupFile01">
+          </div>
+        </div>
+        
+       
+        
+
+        <div class="col-12" style="margin-top: 40px; display: flex; justify-content: center;">
+            <button type="submit" class="btn btn-primary purple darken-3" style="width: 200px; height: 40px;">Submit</button>
+        </div>
+        </div>
+</form>
+  </div>

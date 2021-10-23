@@ -1,0 +1,40 @@
+<div class="row" style="margin-top: 90px;">
+    <div class="col-12"><h1 class="blog_title_view">{{blog.title}}</h1></div>
+    <div class="col-6">
+        <div class="blog_image">
+            <img src="/uploads/{{blog.image}}" style="width: 100%;" alt="blog-image">
+        </div>
+     </div>
+     <div class="col-6">
+           <div class="blog_info">
+            <p class="blog_info_view">{{blog.info}}</p>
+        </div>
+     </div>
+      <div class="col-6">
+          {{#if blog.videoUrl.length}}
+        <div class="blog_video">
+            <video controls preload="{{blog.videoUrl}}" width="100%" height="500px" >
+                <source src="{{blog.videoUrl}}">
+            </video>
+        </div>
+        {{/if}}
+      </div>
+      <div class="col-6  pt-5">
+ {{#if blog.audio}}
+        <div class="blog_audio">
+            <figure>
+            <audio
+             controls
+                src="/uploads/{{blog.audio}}">
+                    Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+        </div>
+        {{/if}}
+      </div>
+        
+       
+
+    
+</div>

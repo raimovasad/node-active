@@ -1,0 +1,48 @@
+
+
+
+
+<div class="row">
+    <div id="register">
+                <form action="/user/edit" method="POST" enctype="multipart/form-data" id="register-from" >
+        <div class="register__form row">
+        <div class="input-field col offset-s2 s8 ">
+          <input  id="fullname" type="text" name="username" value="{{user.username}}" class="validate">
+          <label for="fullname">Fullname</label>
+        </div>
+        <div class="input-field col offset-s2 s8 "> 
+          <input id="emailr" type="email" name="email" value="{{user.email}}" class="validate">
+          <label for="emailr">Email</label>
+        </div>
+
+        <div class="input-field col offset-s2 s8 ">
+          <input  id="passwordr" type="password" name="password" class="validate">
+          <label for="passwordr">Password</label>
+        </div>
+        
+        <div class="input-field col offset-s2 s8 ">
+          <input  id="passwordreg" type="password" name="password2" class="validate">
+          <label for="passwordreg">Retype password</label>
+        </div>
+
+         <div class="file-field input-field col offset-s2 s8">
+             <div class="btn purple darken-3">
+              <span>Choose File</span>
+              <input type="file" name="avatar">
+             </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text" value="{{user.avatar}}" placeholder="Upload one or more files">
+             </div>
+      </div>
+
+        <div class="register-from-bottom col s8 offset-s2">
+            <button type="submit" class="btn purple darken-3 btn-primary">Update</button>
+        </div>
+        </div>
+</form>
+    <div class="user_delete col offset-s2 s8 " style="display: flex; justify-content: flex-start;">
+        <a href="/user/delete" class="btn red darken-2 btn-primary">Delete user</a>
+    </div>
+
+    </div>
+</div>
