@@ -2,34 +2,53 @@
       <form action="/blogs/add" method="POST" style="width: 80%;" enctype="multipart/form-data">
         <div class="row addblog__form">
        
-       <div class="col-6">
-          <div class="input-group">
-          <input  id="title" type="text" name="title" class="form-control">
+       
+       
+         <div class="input-field col s12">
+          <input  id="title" type="text" name="title" class="validate">
           <label for="title">Title of the blog</label>
         </div>
-          <div class="input-group">
-            <textarea id="textarea2" class="form-control" name="info"></textarea>
-            <label for="textarea2">Blog info</label>
-          </div>
-           <div class="input-group">
-          <input  id="videoUrl" type="text" name="videoUrl" class="form-control">
+
+          
+
+          <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea" name="info"></textarea>
+          <label for="textarea1">Blog info</label>
+        </div>
+
+           <div class="input-field col s12">
+          <input  id="videoUrl" type="text" name="videoUrl" class="validate">
           <label for="videoUrl">Video url of the blog</label>
         </div>
 
-         <div class="input-group mb-3">
-            <label class="input-group-text" for="inputGroupFile01">Choose Picture</label>
-            <input type="file" class="form-control" name="image" id="inputGroupFile01">
-          </div>
-         <div class="input-group mb-3">
-            <label class="input-group-text" for="inputGroupFile01">Choose Audio</label>
-            <input type="file" class="form-control" name="audio" id="inputGroupFile01">
-          </div>
-        </div>
+        
+          <div class="file-field input-field col s12">
+             <div class="btn">
+               <span>Choose Picture</span>
+              <input type="file"  name="image">
+             </div>
+            <div class="file-path-wrapper">
+             <input class="file-path validate" type="text" placeholder="Choose Picture">
+            </div>
+         </div>
+
+          <div class="file-field input-field col s12">
+             <div class="btn">
+               <span>Choose Audio</span>
+              <input type="file"   name="audio">
+             </div>
+            <div class="file-path-wrapper">
+             <input class="file-path validate" type="text" placeholder="Choose Audio">
+            </div>
+         </div>
+         
+       
+     
         
        
         
 
-        <div class="col-12" style="margin-top: 40px; display: flex; justify-content: center;">
+        <div class="col s12" style="margin-top: 40px; display: flex; justify-content: center;">
             <button type="submit" class="btn btn-primary purple darken-3" style="width: 200px; height: 40px;">Submit</button>
         </div>
         </div>

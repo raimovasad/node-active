@@ -1,0 +1,17 @@
+<div class="row pt-5">
+    <div class="col-4">
+        <div class="user_img">
+            <img src="/uploads/{{userAdmin.avatar}}" alt="{{userAdmin.avatar}}" style="width: 100%;">
+        </div>
+    </div>
+    <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+        <div class="user_info">
+            <h3>{{userAdmin.username}}</h3>
+            <small>{{userAdmin.email}}</small>
+        </div>
+        <div class="user_action">
+            <a class="btn btn-dark" href="/user/edit">Edit</a>
+            <a class="btn btn-danger" href="/user/delete">Delete</a>
+        </div>
+    </div>
+</div>

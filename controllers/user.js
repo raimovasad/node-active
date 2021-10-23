@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs')
 
 exports.profilePage = async(req,res,next)=>{
          const user = req.user
-            res.render('index',{
+            res.render('user',{
                 title: 'Home page',
                 user
             })
