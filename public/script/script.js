@@ -89,7 +89,7 @@
         const blogNum = Math.ceil(blogs.length / 5)
         let arr =[]
         let y = 0
-        for(x=1;x<=blogNum;x++){
+        for(x=1; x<=blogNum; x++){
           arr.push(`<span class="pages" data-page="${y}" >${x}</span>`)
           y += 5
         }
@@ -108,8 +108,9 @@
           pages.querySelectorAll('.pages').forEach(page=>{
             page.addEventListener("click",function (e){  
             let current = e.target.dataset.page
+
             let currentArr = blogs.filter((blog,index)=>{
-              return current <= index && index< current + 5
+              return current <= index && index < current + 5
             }) 
             const blogsPage = document.querySelector('#blogsPage')
             const html = currentArr.map(blog=> {
