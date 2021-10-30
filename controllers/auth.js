@@ -35,7 +35,6 @@ exports.register = async(req,res,next)=>{
         return res.status(400).json({success:false,message:"Email has already been registered"})
     }
     const isSame = password== password2
-    console.log(isSame);
         try{
             if(!isSame){
                 return res.redirect('/api/auth#register')
