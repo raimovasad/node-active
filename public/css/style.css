@@ -218,7 +218,10 @@ body{
     height: 40px;
 }
 
-
+.card .card-content p{
+    max-height: 250px;
+    overflow: hidden;
+}
 
 
 

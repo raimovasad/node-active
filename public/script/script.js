@@ -54,7 +54,7 @@
    }
 
 
-    fetch('http://localhost:3000/blogs/getAll')
+    fetch('/blogs/getAll')
     .then(data => data.json())
     .then(data => {
       const {blogs,user} = data

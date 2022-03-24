@@ -106,14 +106,17 @@ exports.editBlogPost = async(req,res,next)=>{
 }
 
 exports.addBlogPost = async(req,res,next)=>{
-    console.log(req.files);
      let {title,info,videoUrl} = req.body
      if(!videoUrl || videoUrl.trim()==''){
         videoUrl = ''
      }
-     const image = req.files.image[0].filename
-     const audio = req.files.audio[0].filename
-     console.log('image', req.files.image[0]);
+     let {image, audio} = req.files
+     if(image && image.length!==0){
+        image = image[0].filename;
+     }
+     if(audio && audio.length!==0){
+        audio = audio[0].filename;
+     }
      try {
     await  Blog.create({
         title,
